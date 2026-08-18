@@ -6,14 +6,10 @@
     "anthropic-agent-skills": "anthropics/skills",
     "pitimon-cybersecurity": "pitimon/claude-cybersecurity-skill"
   },
+  "$pluginsComment": "Deliberately excluded: document-skills and claude-api (duplicate skills already bundled with the desktop app), frontend-design (byte-identical to the copy inside example-skills), academy-guide and discernment-nudge (no value for this workflow).",
   "plugins": [
     "superpowers@claude-plugins-official",
-    "frontend-design@claude-plugins-official",
     "example-skills@anthropic-agent-skills",
-    "document-skills@anthropic-agent-skills",
-    "claude-api@anthropic-agent-skills",
-    "academy-guide@anthropic-agent-skills",
-    "discernment-nudge@anthropic-agent-skills",
     "cybersecurity-pro@pitimon-cybersecurity"
   ],
   "mcpServers": {

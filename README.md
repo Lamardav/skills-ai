@@ -33,7 +33,7 @@ git clone https://github.com/Lamardav/skills-ai.git && cd skills-ai && ./install
 | | |
 |---|---|
 | **Маркетплейсы** | `anthropics/claude-plugins-official`, `anthropics/skills`, `pitimon/claude-cybersecurity-skill`, плюс сам этот репозиторий |
-| **Плагины** | superpowers, frontend-design, example-skills, document-skills, claude-api, academy-guide, discernment-nudge, cybersecurity-pro, skills-ai |
+| **Плагины** | superpowers, example-skills, cybersecurity-pro, skills-ai |
 | **MCP** | `context7` (актуальная документация библиотек), `playwright` (управление браузером) |
 
 ## Плагин `skills-ai`
@@ -85,7 +85,10 @@ install.ps1 / install.sh          бутстрап
 
 - `context7` работает без ключа с пониженным лимитом. Ключ — `npx ctx7 setup --claude`.
 - `playwright` требует Node.js 18+; браузеры докачиваются при первом запуске.
-- `document-skills` и `claude-api` дублируют скилы, встроенные в десктоп-приложение.
-  Если мешают — `claude plugin disable document-skills@anthropic-agent-skills`.
+- Из маркетплейсов намеренно **не** ставятся: `document-skills` и `claude-api`
+  (дублируют скилы, встроенные в приложение), `frontend-design`
+  (байт-в-байт совпадает с копией внутри `example-skills`), `academy-guide`
+  и `discernment-nudge` (бесполезны в этом рабочем процессе). Список исключений
+  задокументирован прямо в `manifest.json`.
 - Личные настройки (`~/.claude/settings.json`), история и кэш плагинов
   в репозиторий не входят и между машинами не синхронизируются.
