@@ -1,0 +1,14 @@
+{
+  "name": "skills-ai",
+  "description": "Personal Claude Code stack: brief-on-startup plugin plus a manifest of every marketplace, plugin and MCP server to install.",
+  "owner": { "name": "CYBER" },
+  "plugins": [
+    {
+      "name": "skills-ai",
+      "description": "Shows a short digest of the installed skills/plugins stack at the start of every session, and provides /skills-brief on demand.",
+      "version": "1.0.0",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

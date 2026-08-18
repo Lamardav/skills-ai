@@ -1,0 +1,8 @@
+{
+  "name": "skills-ai",
+  "version": "1.0.0",
+  "description": "Startup digest for the personal Claude Code stack: what is installed, what fires automatically, and the commands worth remembering.",
+  "author": { "name": "CYBER" },
+  "license": "MIT",
+  "keywords": ["skills", "plugins", "onboarding", "session-start"]
+}

@@ -1,0 +1,32 @@
+{
+  "$comment": "Single source of truth for the Skills AI stack. install.ps1 / install.sh read this file.",
+  "version": "1.0.0",
+  "marketplaces": {
+    "claude-plugins-official": "anthropics/claude-plugins-official",
+    "anthropic-agent-skills": "anthropics/skills",
+    "pitimon-cybersecurity": "pitimon/claude-cybersecurity-skill"
+  },
+  "plugins": [
+    "superpowers@claude-plugins-official",
+    "frontend-design@claude-plugins-official",
+    "example-skills@anthropic-agent-skills",
+    "document-skills@anthropic-agent-skills",
+    "claude-api@anthropic-agent-skills",
+    "academy-guide@anthropic-agent-skills",
+    "discernment-nudge@anthropic-agent-skills",
+    "cybersecurity-pro@pitimon-cybersecurity"
+  ],
+  "mcpServers": {
+    "context7": {
+      "transport": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "note": "Works without a key at a lower rate limit. For a key: npx ctx7 setup --claude"
+    },
+    "playwright": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "note": "Requires Node.js 18+"
+    }
+  }
+}
