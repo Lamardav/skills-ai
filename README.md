@@ -42,7 +42,10 @@ git clone https://github.com/Lamardav/skills-ai.git && cd skills-ai && ./install
 
 - **SessionStart-хук** — печатает [`BRIEF.md`](BRIEF.md) в начале каждой новой
   сессии (`startup` и `/clear`, но не после сжатия контекста);
-- **`/skills-brief`** — показать выжимку вручную в любой момент.
+- **`/skills-brief`** — показать выжимку вручную в любой момент;
+- **`grilling` + `/grill-me`** — скилы, вендоренные из
+  [mattpocock/skills](https://github.com/mattpocock/skills) под MIT.
+  Подробности и лицензия — в [`skills/THIRD_PARTY.md`](skills/THIRD_PARTY.md).
 
 Текст выжимки правится в `BRIEF.md` — код трогать не нужно. Claude Code держит
 копию плагина в своём кэше, поэтому после правки примени её:
@@ -71,6 +74,7 @@ git clone https://github.com/Lamardav/skills-ai.git && cd skills-ai && ./install
 .claude-plugin/plugin.json        метаданные плагина
 manifest.json                     что именно ставить (источник правды)
 BRIEF.md                          текст выжимки
+skills/                           вендоренные сторонние скилы
 hooks/hooks.json                  регистрация SessionStart
 hooks/run-hook.cmd                cmd/bash-полиглот (Windows + Unix)
 hooks/session-start               сам скрипт вывода
