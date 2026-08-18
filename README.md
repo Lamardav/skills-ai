@@ -1,5 +1,7 @@
 # Skills AI
 
+<https://github.com/Lamardav/skills-ai>
+
 Один репозиторий, который поднимает мой полный стек Claude Code на любой машине —
 маркетплейсы, плагины, MCP-серверы — и печатает краткую выжимку по стеку
 в начале каждой сессии.
@@ -7,7 +9,7 @@
 ## Установка на новом ПК
 
 ```powershell
-git clone <URL этого репозитория> skills-ai
+git clone https://github.com/Lamardav/skills-ai.git
 cd skills-ai
 .\install.ps1
 ```
@@ -15,7 +17,7 @@ cd skills-ai
 macOS / Linux:
 
 ```bash
-git clone <URL этого репозитория> skills-ai && cd skills-ai && ./install.sh
+git clone https://github.com/Lamardav/skills-ai.git && cd skills-ai && ./install.sh
 ```
 
 Скрипт идемпотентен — повторный запуск ничего не ломает, уже установленное
